@@ -1,13 +1,12 @@
 #include "temperature.h"
+#include<iostream>
 
-
-double celsius2fahrenheit(double celsius) {
-    double answer = 0;
-    // Your code here
+double Temperature::celsius2fahrenheit(double celsius) {
+    double answer = (celsius*(9.0/5.0))+32;
     return answer;
 }
 
-void Temperature::fahrenheit2celsius(double fahrenheit) {
-    // Your code here
+double Temperature::fahrenheit2celsius(double fahrenheit) {
+    double answer = (fahrenheit-32)*(5.0/9.0);
     return answer;
 }
